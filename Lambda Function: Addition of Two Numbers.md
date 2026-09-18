@@ -1,53 +1,25 @@
-# 🔺 Looping(Patterns)-Pascal's Triangle Generator in Python
-
-This project demonstrates a simple Python program to generate **Pascal’s Triangle**, where the number of rows is provided by the user.
-
----
+# Lambda Function in Python: Addition of Two Numbers
 
 ## 🎯 Aim
-
-To write a Python program that generates **Pascal's Triangle** using numbers. The number of rows is accepted from the user.
-
----
+To write a Python program that defines a **lambda function** which takes two arguments `a` and `b`, and returns their sum.
 
 ## 🧠 Algorithm
+1. Get two integer inputs from the user.
+2. Use a **lambda function** to define a function `f` that returns `a + b`.
+3. Call the function with the user inputs and print the result.
 
-1. Start the program.
-2. Input the number of rows from the user.
-3. Loop from 0 to the number of rows.
-4. For each row:
-   - Print appropriate spaces to shape the triangle.
-   - Compute values using the formula:  
-     \[
-     C(n, k) = \frac{n!}{k!(n-k)!}
-     \]
-5. Print all rows of Pascal’s Triangle.
-6. End the program.
-
----
-
-## 🧪 Program
+## 🧾 Program
 ```
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial(n - 1)
+a=int(input()) 
 
-def combination(n, k):
-    return factorial(n) // (factorial(k) * factorial(n - k))
+b=int(input()) 
 
-num_rows = int(input("Enter number of rows: "))
+f=lambda a,b: a+b 
 
-for i in range(num_rows):
-    print(' ' * (num_rows - i - 1), end='')
-    for j in range(i + 1):
-        print(combination(i, j), end=' ')
-    print()
+print(f(a,b))
 ```
-
-## Sample Output
-<img width="201" height="225" alt="image" src="https://github.com/user-attachments/assets/0981e0cf-d655-4137-896b-312886c53fc3" />
+## Output
+<img width="461" height="186" alt="image" src="https://github.com/user-attachments/assets/04a8e045-5fb3-4e07-beef-208f62e97d6e" />
 
 ## Result
-Thus, the program has been successfully executed
-
+Thus, the program has been successfully executed.
